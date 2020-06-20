@@ -1,5 +1,5 @@
 <template lang="html">
-<div class="">
+<div class="select">
 <select v-on:change="handleSelect" v-model="selectedCharacter">
 <option disabled value="">Select a Character</option>
 <option v-for="character in characters" :value="character" :key="character.id">{{character.name}}</option>
@@ -27,4 +27,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 </style>
