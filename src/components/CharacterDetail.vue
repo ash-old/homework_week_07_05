@@ -30,7 +30,6 @@ export default {
 
 <style lang="css" scoped>
 
-
 .pic{
   border-radius: 2px;
   border-style:inset;

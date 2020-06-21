@@ -1,7 +1,7 @@
 <template>
   <div >
     <span class="logo">
-      <img src="./assets/logo.png" height="100" width="300" alt="Breaking Bad logo">
+      <img src="./assets/logo.png" height="120" width="220" alt="Breaking Bad logo">
     </span>
     <div id="app">
       <character-list :characters="characters"></character-list>
@@ -25,7 +25,7 @@ export default {
   },
   components: {
     'character-list': CharacterList,
-    'character-detail': CharacterDetail 
+    'character-detail': CharacterDetail
   },
   mounted(){
     fetch('https://www.breakingbadapi.com/api/characters')
