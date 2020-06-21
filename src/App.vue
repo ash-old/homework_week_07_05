@@ -15,16 +15,17 @@ import {eventBus} from './main.js'
 import CharacterList from './components/CharacterList.vue'
 import CharacterDetail from './components/CharacterDetail.vue'
 
+
 export default {
   data(){
     return{
       characters: [],
-      "selectedCharacter": null
+      "selectedCharacter": null,
     }
   },
   components: {
     'character-list': CharacterList,
-    'character-detail': CharacterDetail
+    'character-detail': CharacterDetail 
   },
   mounted(){
     fetch('https://www.breakingbadapi.com/api/characters')
@@ -34,6 +35,7 @@ export default {
     eventBus.$on('character-selected', (character) =>{
       this.selectedCharacter = character
     })
+
   }
 }
 
